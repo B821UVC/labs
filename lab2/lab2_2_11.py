@@ -1,6 +1,7 @@
-n = int(input())
+n = int(input("Введите количество студентов"))
 x=0
 avg_score=0
+print("вводите в одной строке одну оценку")
 for j in range(n):
     flag=True
     for s in range(4):
