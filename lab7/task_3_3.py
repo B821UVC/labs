@@ -55,7 +55,7 @@ class Competition:
             elif i==4:
                 points = 1
             if(type(list_of_winners[i])) == int:
-                print(list_of_winners[i])
+                #print(list_of_winners[i])
                 Person.search_by_id(list_of_winners[i]).add_score(points)
             else:
                 first_name, last_name = list_of_winners[i].split()
@@ -77,6 +77,7 @@ winners = ["AA BB", "CC DD", "EE FF", "GG HH", "II JJ"]
 #присваиваем очки
 comp.set_winners(winners)
 #выводим результат
+print("Результаты конкурса 1:")
 for i in comp.get_teams():
     print(i.name, i.get_total_score())
 
@@ -90,5 +91,6 @@ comp2 = Competition([team4, team5, team6])
 winners = ["AKK BKK", 20, "IIhh JJhhh", 29, "IKK JKK"]
 comp2.set_winners(winners)
 #выводим результат
+print("Результаты конкурса 2:")
 for i in comp2.get_teams():
     print(i.name, i.get_total_score())
