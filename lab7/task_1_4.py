@@ -1,3 +1,5 @@
+'''Результаты соревнований по прыжкам в высоту определяются по лучшей из двух попыток. Вывести список участников в порядке заня-
+тых мест.'''
 class competiton_participant:
     def __init__(self, name, age, attempt1, attempt2):
         self.name = name
